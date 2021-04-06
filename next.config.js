@@ -21,11 +21,15 @@ module.exports = {
   async headers() {
     return [
       {
-        source: '/umami.js',
+        source: '/t.js',
         headers: [
           {
             key: 'Cache-Control',
             value: 'public, max-age=2592000', // 30 days
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
           },
         ],
       },
