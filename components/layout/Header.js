@@ -33,7 +33,7 @@ export default function Header() {
           <div className="">
             <div className={styles.title}>
               <Icon icon={<Logo />} size="large" className={styles.logo} />
-              {user ? <Link href='/'>umami</Link> :<>umami</>}
+              {user ? <Link href='/'>umami</Link> : <>umami</>}
             </div>
           </div>
           <Button
